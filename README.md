@@ -53,9 +53,9 @@ python manage.py runserver
 ```
 
 ## Usage
-- Visit `http://127.0.0.1:8000/signup/` to create an account.
+- Visit `http://127.0.0.1:8000/register/` to create an account.
 - Log in at `http://127.0.0.1:8000/login/`.
-- Access the dashboard at `http://127.0.0.1:8000/dashboard/`.
+- Access the dashboard at `http://127.0.0.1:8000`.
 - View your profile at `http://127.0.0.1:8000/profile/`.
 - Reset password using `http://127.0.0.1:8000/password_reset/`.
 ---
