@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<div class="center">
+    <div class="main">
+    {% for message in messages %}
+    <p>{{message}}</p>
+    {% endfor %}
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <p><input type="text" name="username" placeholder="Username"></p>
+        <p><input type="password" name="password" placeholder="password"></p>
+        <p><input class="btn" type="submit" value="Login"></p>
+    </form>
+    <p>Don't have an account? 
+        <a href="{% url 'register' %}">Register</a>
+    </p>
+    <p>
+        <a href="{% url 'password_reset' %}">Forget password?</a>
+    </p>
+</div>
+</div>
+</body>
+</html>
